@@ -1,0 +1,34 @@
+:root{
+    --main-background_white: #EEECE8;
+    --main-red:#db0000;
+    --main-black:#222;
+}
+
+*{
+    font-family: GT America Standard,Helvetica Neue,Helvetica,Yu Gothic,YuGothic,BlinkMacSystemFont,Hiragino Sans,Hiragino Kaku Gothic ProN,meiryo,sans-serif;
+    font-weight: 400;
+    background:var(--main-background_white);
+    color:var(--main-red);
+}
+a{
+    color:var(--main-red);
+    text-decoration: none;
+    font-weight: 300;
+}
+.nav{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height:10vh;
+    border-bottom: 1px solid var(--main-red);
+}
+
+
+
+.admin_content{
+    height:70vh;
+    width:100vw;
+    padding-left:10%;
+    padding-right:10%;
+    padding-top:5%;
+}
