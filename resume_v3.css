@@ -61,7 +61,7 @@
 /* login */
 #loginblock{
     width:450px;
-    height:70%;
+    height:inherit;
     z-index:5;
     position:fixed;
     top:50%;
@@ -140,16 +140,16 @@
     outline:none;
 }
 .login_button button{
-    width:30%;
+    width:45%;
     border:1px white solid;
     color:var(--main-purewhite);
     background-color: #ffffff30;
-    margin-top:5vh;
+    margin-top:5%;
 }
 
 .login_button{
-    justify-content: space-evenly;
-    width:70%;
+    justify-content: space-between;
+    width:65%;
 }
 .res{
     color:var(--main-purewhite);
@@ -1338,6 +1338,7 @@ xxl: 1320px
 
     .topnav span{
         font-size:1.6em;
+        overflow: hidden;
     }
 
     .intro_title,
