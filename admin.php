@@ -15,7 +15,7 @@ include_once "base.php";
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
     <link rel="stylesheet" type="text/css" href="admin.css">
-    <title>管理頁面</title>
+    <title>履歷管理頁面</title>
 </head>
 <body>
 <div class="nav">

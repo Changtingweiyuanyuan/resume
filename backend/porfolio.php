@@ -74,9 +74,11 @@ span{
 
 .fa-pencil{
     font-size: 1.5em;
+    cursor: pointer;
 }
 
 </style>
+
 <h3>作品集隱藏及顯示</h3>
 <br>
 <pre>
@@ -111,7 +113,8 @@ foreach($pors as $k => $por){
 
 <div class="por_content d-flex">
     <div class="col-1">
-    <i class="fa fa-pencil" aria-hidden="true" onclick="op('#porReviseBlock<?=$por['id'];?>','#cvr','backend/porReviseBlock.php')"></i>
+    <i class="fa fa-pencil" aria-hidden="true" onclick="op('#porReviseBlock<?=$por['id'];?>','backend/porReviseBlock.php')">
+    </i>
     </div>
 
 
@@ -122,8 +125,9 @@ foreach($pors as $k => $por){
 
         <img src="
         <?php
-        $imgs=$SelfPic->q("select * from `image` where `img` LIKE 'por%' && `porName`='".$por['name']."'");
+        $imgs=$SelfPic->q("select `img` from `resume_image` where `img` LIKE 'por%' && `porName`='".$por['name']."'");
         echo 'self_pic/'.$imgs['img'];
+        
         ?>
         " style="width:100px;height:100px;">
         
@@ -167,6 +171,7 @@ foreach($pors as $k => $por){
 
 <?php
 $pors=$Por->all();
+
 foreach($pors as $k => $por){
     ?>
     <form action="api/editPor.php" method="post" enctype="multipart/form-data">
@@ -341,12 +346,7 @@ foreach($pors as $k => $por){
     }
 
 
-        // function reset(){
-        //     console.log('1243253');
-        //     $("#filepath").val('');
-        // }
-
-    function op(x,y,url)
+function op(x,url)
     {
         $(x).fadeIn()
         $(x).css({'width':'80%','height':'70%','position':'fixed','z-index':'5','background':'#EEECD8','border':'3px solid #222','top':'50%','left':'50%','transform':'translate(-50%,-50%)','overflow':'hidden','border-radius':'5px','padding':'20px'})

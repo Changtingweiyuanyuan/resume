@@ -1,14 +1,16 @@
 :root{
-    --main-background_white: #EEECE8;
+    --main-background_white: #ccc;
     --main-red:#db0000;
+    --main-red:white;
     --main-black:#222;
+
 }
 
 *{
     font-family: GT America Standard,Helvetica Neue,Helvetica,Yu Gothic,YuGothic,BlinkMacSystemFont,Hiragino Sans,Hiragino Kaku Gothic ProN,meiryo,sans-serif;
     font-weight: 400;
-    background:var(--main-background_white);
-    color:var(--main-red);
+    background:#8ac5d1;
+    color:black
 }
 a{
     color:var(--main-red);

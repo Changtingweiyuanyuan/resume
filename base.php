@@ -3,14 +3,14 @@ date_default_timezone_set("Asia/Taipei");
 session_start();
 
 
-$Login=new DB("login");
-$BasicIntro=new DB("basic_intro");
-$SelfIntro=new DB("self_intro");
-$SelfPic=new DB("image");
-$Work=new DB("work_experience");
-$Por=new DB("porfolio");
-$Sk=new DB("skills");
-$Skt=new DB("sk_text");
+$Login=new DB("resume_login");
+$BasicIntro=new DB("resume_basic_intro");
+$SelfIntro=new DB("resume_self_intro");
+$SelfPic=new DB("resume_image");
+$Work=new DB("resume_work_experience");
+$Por=new DB("resume_porfolio");
+$Sk=new DB("resume_skills");
+$Skt=new DB("resume_sk_text");
 
 
 
@@ -118,7 +118,7 @@ function q($sql){
 }
 
 function qall($sql){
-    
+    // echo $sql;
     return $this->pdo->query($sql)->fetchAll();
 }
 
